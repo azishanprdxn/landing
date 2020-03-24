@@ -204,13 +204,82 @@ li {
 
 .wrapper {
   max-width: 1360px;
-  width: 86%;
+  width: 86.5%;
   margin: 0 auto;
 }
 
 /*=================================
   Header styling starts here
 =================================*/
+
+header {
+  position: relative;
+  background-color: #39defe;
+  color: #fff;
+}
+
+.content {
+  width: 48%;
+  padding: 294px 24px 298px 29px;
+}
+
+header h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+header p {
+  padding: 16px 0 30px 0;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+header p>span {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.download-button {
+  padding: 15px 23px;
+  background-color: #3887ed;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.download-button:hover {
+  margin: -2px;
+  background-color: transparent;
+  border: 2px solid #3887ed;
+  color: #3887ed;
+  transition: 0.2s;
+}
+
+.shop {
+  position: absolute;
+  top: 160px;
+  right: 280px;
+  box-shadow: 1px 1px 4px #454545;
+  transition: box-shadow 0.2s;
+}
+
+.shop:hover {
+  box-shadow: 2px 2px 10px #454545;
+  z-index: 1;
+  transition: 0.2s;
+}
+
+.my-groups {
+  position: absolute;
+  top: 240px;
+  right: 104px;
+  box-shadow: 1px 1px 4px #454545;
+  transition: box-shadow 0.2s;
+}
+
+.my-groups:hover {
+  box-shadow: 2px 2px 10px #454545;
+  z-index: 1;
+  transition: 0.2s;
+}
 
 /*=================================
   Header styling ends here
@@ -219,12 +288,301 @@ li {
   main styling starts here
 =================================*/
 
+.keep-it-simple {
+  padding-top: 112px;
+}
+
+/* flexible box with image section */
+
+.image-flex {
+  width: 100%;
+  padding: 176px 14px 0 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.07);
+}
+
+.beautiful-design .image-flex {
+  border-bottom: none;
+}
+
+.image-flex>.flexbox {
+  width: 50%;
+}
+
+.image-flex img {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.5), -2px 0 4px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+
+.image-flex img:hover {
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5), -2px 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+
+.flex-content {
+  padding: 206px 2px 100px 2px;
+}
+
+.flex-content h2 {
+  font-size: 29px;
+  text-transform: capitalize;
+}
+
+.flex-content h2::after {
+  content: "";
+  display: block;
+  width: 29px;
+  height: 2px;
+  margin: 18px 0;
+  background-color: #3887ed;
+}
+
+.flex-content p {
+  padding: 2px 0;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.8;
+}
+
+.image-right {
+  padding-right: 26px;
+  text-align: right;
+}
+
+/* testimonials section */
+
+.testimonials {
+  background-color: rgba(0, 0, 0, 0.07);
+  text-align: center;
+}
+
+.testimonials h2 {
+  padding: 114px 0 75px 0;
+  font-size: 29px;
+  text-transform: capitalize;
+}
+
+.carousel-testimonial img {
+  border-radius: 50px;
+}
+
+.review-by {
+  padding-top: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.review {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 0;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.carousel-testimonial figcaption>span {
+  padding: 6px 1px;
+  color: #fbc23c;
+  font-size: 11px;
+}
+
+.carousel-testimonial span:nth-of-type(5) {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slider {
+  padding: 10px 0 122px 0;
+}
+
+.carousel-slider span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.carousel-slider span.active {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #3887ed;
+}
+
+.carousel-slider span:hover:not(.active) {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+
+/* features section */
+
+.features {
+  text-align: center;
+}
+
+.features .flex-container {
+  width: 100%;
+  padding-bottom: 119px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features .flex-container>.flexbox {
+  width: 25%;
+  padding-top: 80px;
+}
+
+.features h2 {
+  padding: 114px 0 27px 0;
+  font-size: 29px;
+  text-transform: capitalize;
+}
+
+.features>.wrapper>p {
+  width: 65%;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.8;
+}
+
+.icons {
+  padding: 26px;
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  color: #3887ed;
+  font-size: 38px;
+}
+
+.icons:hover {
+  color: #39defe;
+}
+
+.flexbox h3 {
+  padding: 38px 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.features .flex-container>.flexbox p {
+  padding: 0 12px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.8;
+}
+
+/* subscribe section */
+
+.subscribe {
+  background-color: #39defe;
+  text-align: center;
+}
+
+.subscribe h2 {
+  padding: 114px 0 18px 0;
+  font-size: 29px;
+  text-transform: capitalize;
+}
+
+.subscribe>.wrapper>p {
+  width: 65%;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+form.flex-container {
+  width: 97%;
+  margin: 0 auto;
+  padding: 78px 0 120px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+form.flex-container>.flexbox {
+  width: 33.33%;
+}
+
+form.flex-container input {
+  width: 82%;
+  margin: 0 auto;
+  padding: 18px 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: #3887ed;
+}
+
+form.flex-container input::placeholder {
+  color: #000;
+}
+
+form.flex-container input:focus {
+  margin: -1px;
+  border: 1px solid #3887ed;
+  transition: 0.4s;
+}
+
+form.flex-container a {
+  width: 82%;
+  padding: 18px 20px;
+  background-color: #3887ed;
+  border-radius: 32px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+form.flex-container a:hover {
+  margin: -2px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  transition: 0.2s;
+}
+
 /*=================================
   main styling ends here
 =================================*/
 /*=================================
   footer styling starts here
 =================================*/
+footer {
+  padding: 120px 0 92px 0;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+footer a {
+  color: #3887ed;
+}
+
+.copyright p {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+.social-links a {
+  padding: 26px 20px;
+  font-size: 28px;
+}
+
+.social-links a:hover {
+  color: rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
 
 /*=================================
   footer styling ends here
